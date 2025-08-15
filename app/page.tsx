@@ -277,7 +277,7 @@ export default function Portfolio() {
             <div className="mb-4">
               <h3 className="text-lg font-sans font-semibold mb-2">PTCL TV - Watching TV Just Got Better.</h3>
               <p className="text-sm font-sans text-gray-600 mb-6">
-                Reimagined the national TV streaming app, boosting usability, engagement, and brand appeal
+                Reimagined the TV streaming app, boosting usability, engagement, and brand appeal
               </p>
             </div>
             <div className="grid grid-cols-10 gap-2 sm:gap-4 h-48 sm:h-56 md:h-64">
@@ -308,7 +308,7 @@ export default function Portfolio() {
                 </h3>
               </Link>
               <p className="text-sm font-sans text-gray-600 mb-6">
-                Redesigned Pakistan's leading news platform for better user engagement and content discovery
+                Reimagining Pakistan's most-watched news channel for the digital age
               </p>
             </div>
             <Link href="/case-studies/ary-news" className="block group">
@@ -381,7 +381,7 @@ export default function Portfolio() {
               GitHub <ArrowUpRight className="w-3 h-3" />
             </a>
           </div>
-          <div className="mt-4 text-xs font-sans text-gray-500">© 2025 🥑 • Remote-first • Open to relocation (US, EU, MENA)</div>
+          <div className="mt-4 text-xs font-sans text-gray-500">© 2025 🥑 • Remote-first • Open to relocation </div>
         </div>
       </div>
     </div>
