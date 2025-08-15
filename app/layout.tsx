@@ -1,6 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
+import { Suspense } from "react"
 import "./globals.css"
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -10,9 +12,39 @@ const jakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Abdul Kudoos - Lead Product Designer",
+  description:
+    "IBM Certified Product Designer with 7+ years of experience leading design for SaaS, gaming and consumer tech products. Trusted by startups to drive growth, retention and revenue through strategic design.",
   generator: "v0.app",
+  metadataBase: new URL("https://abdulkudoos.com"),
+  openGraph: {
+    title: "Abdul Kudoos - Lead Product Designer",
+    description:
+      "IBM Certified Product Designer with 7+ years of experience leading design for SaaS, gaming and consumer tech products.",
+    url: "https://abdulkudoos.com",
+    siteName: "Abdul Kudoos Portfolio",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Abdul Kudoos - Lead Product Designer Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdul Kudoos - Lead Product Designer",
+    description:
+      "IBM Certified Product Designer with 7+ years of experience leading design for SaaS, gaming and consumer tech products.",
+    images: ["/twitter-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -30,7 +62,10 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+        <Analytics />
+      </body>
     </html>
   )
 }
