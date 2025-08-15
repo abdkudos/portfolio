@@ -178,7 +178,7 @@ export default function GrabEatCaseStudy() {
               </p>
               <ul className="space-y-2 text-sm font-sans text-gray-500 dark:text-gray-400">
                 <li>• Lightweight vendor app with product toggles and order alerts</li>
-                <li>• No complex dashboards—only essential actions like fulfill/cancel</li>
+                <li>• No complex dashboards only essential actions like fulfill/cancel</li>
                 <li>• Built-in micro-education on handling orders and managing reviews</li>
               </ul>
             </div>

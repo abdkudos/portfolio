@@ -72,9 +72,7 @@ export default function HoneCaseStudy() {
         <div className="mb-16">
           <h2 className="text-xl font-sans font-semibold mb-6">Context</h2>
           <p className="text-base font-sans text-gray-600 dark:text-gray-300 leading-relaxed">
-            When I joined Hone, it was a raw prototype — functional but untrustworthy, confusing, and unappealing to
-            gamers. The vision: transform it into a trusted, everyday companion for PC gamers that feels as intuitive as
-            a controller and as powerful as a top-tier GPU.
+            When I joined Hone, it was a raw prototype. Functional but untrustworthy, confusing, and unappealing to gamers. The vision: transform it into a trusted, everyday companion for PC gamers that feels as intuitive as a controller and as powerful as a top-tier GPU.
           </p>
         </div>
 

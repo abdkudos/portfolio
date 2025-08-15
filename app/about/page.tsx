@@ -43,7 +43,7 @@ export default function About() {
             </p>
             <p>
               {
-                "I owe much of my career to curiosity, human psychology, and simply for the love of building something from nothing. I started designing and coding websites at 14, drawn by the idea that pixels could change how people think, feel, and act. Over time, I transitioned from web design to full scale product design, blending aesthetics with business impact."
+                "I owe much of my career to curiosity, human psychology, and simply to the love of building something from nothing. I started designing and coding websites at 14, drawn by the idea that pixels could change how people think, feel, and act. Over time, I transitioned from web design to full scale product design, blending aesthetics with business impact."
               }
             </p>
             <p>

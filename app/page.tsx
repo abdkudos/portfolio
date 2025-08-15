@@ -160,7 +160,7 @@ export default function Portfolio() {
                 </h3>
               </Link>
               <p className="text-sm font-sans text-gray-600 mb-6">
-                Drove 16X Revenue from strategic redesign efforts in 18 months{" "}
+                Grew revenue 16× in 18 months through strategic redesigns{" "}
               </p>
             </div>
             <Link href="/case-studies/hone" className="block group">
@@ -381,7 +381,7 @@ export default function Portfolio() {
               GitHub <ArrowUpRight className="w-3 h-3" />
             </a>
           </div>
-          <div className="mt-4 text-xs font-sans text-gray-500">© 2025 🥑 • Remote-first • Open to relocation</div>
+          <div className="mt-4 text-xs font-sans text-gray-500">© 2025 🥑 • Remote-first • Open to relocation (US, EU, MENA)</div>
         </div>
       </div>
     </div>
