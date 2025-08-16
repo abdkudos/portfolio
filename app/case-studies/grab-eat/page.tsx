@@ -127,6 +127,13 @@ export default function GrabEatCaseStudy() {
           <p className="text-base font-sans text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
             I conducted interviews with urban buyers, street vendors, and quality-focused shoppers:
           </p>
+
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-8">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+              <img src="/grab-eat-user-personas.png" alt="Grab Eat user personas research" className="w-full h-auto" />
+            </div>
+          </div>
+
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <span className="w-2 h-2 bg-black dark:bg-white rounded-full mt-2 flex-shrink-0"></span>
@@ -153,11 +160,32 @@ export default function GrabEatCaseStudy() {
               </div>
             </div>
           </div>
+
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-8 mb-8">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+              <img
+                src="/grab-eat-desk-research.png"
+                alt="Grab Eat desk research and wireframes"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Design Solutions */}
         <div className="mb-16">
           <h2 className="text-xl font-sans font-semibold mb-6">Design Solutions</h2>
+
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-8">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+              <img
+                src="/grab-eat-app-structure.png"
+                alt="Grab Eat application structure and user flows"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
           <div className="space-y-8">
             <div>
               <h3 className="text-base font-sans font-semibold mb-3">For Customers</h3>
@@ -181,6 +209,16 @@ export default function GrabEatCaseStudy() {
                 <li>• No complex dashboards only essential actions like fulfill/cancel</li>
                 <li>• Built-in micro-education on handling orders and managing reviews</li>
               </ul>
+            </div>
+          </div>
+
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-8">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+              <img
+                src="/grab-eat-mobile-interface.png"
+                alt="Grab Eat mobile app interface design"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>

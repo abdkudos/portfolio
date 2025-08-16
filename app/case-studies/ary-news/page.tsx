@@ -67,22 +67,8 @@ export default function ARYNewsCase() {
         {/* Hero Image - Full Width */}
         <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
           <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
-            <img
-              src="/ary-news-thumbnail.png"
-              alt="ARY News digital platform interface"
-              className="w-full h-64 sm:h-80 md:h-96 object-cover"
-            />
+            <img src="/ary-news-thumbnail.png" alt="ARY News digital platform interface" className="w-full" />
           </div>
-        </div>
-
-        {/* Overview */}
-        <div className="mb-12">
-          <h2 className="text-lg font-sans font-semibold mb-4">Overview</h2>
-          <p className="text-sm font-sans text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-            {
-              "ARY News is one of Pakistan's most-watched news channels. I redesigned their on-air visual system from breaking news tickers to headline animations bringing clarity, speed, and modern brand consistency to millions of daily viewers."
-            }
-          </p>
         </div>
 
         {/* Research & Insights */}
@@ -111,6 +97,17 @@ export default function ARYNewsCase() {
                 <span>Existing designs overloaded users with ads and dense typography</span>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Broadcast Interface Showcase Image */}
+        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+            <img
+              src="/ary-broadcast-interview.png"
+              alt="ARY News broadcast interface showing Powerplay with Arshad Sharif"
+              className="w-full"
+            />
           </div>
         </div>
 
@@ -149,6 +146,27 @@ export default function ARYNewsCase() {
           </ul>
         </div>
 
+        {/* Press Badges Image */}
+        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+            <img
+              src="/ary-press-badges.png"
+              alt="ARY News press badges and staff identification materials"
+              className="w-full"
+            />
+          </div>
+        </div>
+
+        {/* Overview */}
+        <div className="mb-12">
+          <h2 className="text-lg font-sans font-semibold mb-4">Overview</h2>
+          <p className="text-sm font-sans text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+            {
+              "ARY News is one of Pakistan's most-watched news channels. I redesigned their on-air visual system from breaking news tickers to headline animations bringing clarity, speed, and modern brand consistency to millions of daily viewers."
+            }
+          </p>
+        </div>
+
         {/* Impact */}
         <div className="mb-12">
           <h2 className="text-lg font-sans font-semibold mb-4">Impact</h2>
@@ -156,6 +174,17 @@ export default function ARYNewsCase() {
             The new broadcast identity elevated ARY's on air presence to match global standards, helping retain viewer
             attention and reinforcing the channel's authority in a competitive news landscape.
           </p>
+        </div>
+
+        {/* Promotional Package Image */}
+        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+            <img
+              src="/ary-new-look-package.png"
+              alt="ARY News rebrand promotional package - The New Look of ARY"
+              className="w-full"
+            />
+          </div>
         </div>
       </div>
     </div>
