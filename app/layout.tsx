@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
+import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeToggle } from "@/components/theme-toggle"
 import "./globals.css"
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -17,6 +19,9 @@ export const metadata: Metadata = {
     "IBM Certified Product Designer with 7+ years of experience leading design for SaaS, gaming and consumer tech products. Trusted by startups to drive growth, retention and revenue through strategic design.",
   generator: "v0.app",
   metadataBase: new URL("https://abdulkudoos.com"),
+  icons: {
+    icon: '/avocado-favicon.png',
+  },
   openGraph: {
     title: "Abdul Kudoos - Lead Product Designer",
     description:
@@ -54,17 +59,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={jakartaSans.variable}>
-      <head>
-        <style>{`
-html {
-  font-family: ${jakartaSans.style.fontFamily};
-  --font-sans: ${jakartaSans.style.fontFamily};
-}
-        `}</style>
-      </head>
       <body>
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        <Analytics />
+        <ThemeProvider>
+          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+          <ThemeToggle />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

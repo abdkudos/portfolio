@@ -76,9 +76,9 @@ export default function HoneCaseStudy() {
           </p>
         </div>
 
-        {/* Challenge Image - Full Width */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-16">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden aspect-video mx-6">
+        {/* Challenge Image - Contained */}
+        <div className="mb-16">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden aspect-video">
             <img
               src="/hone-interface-updated.png"
               alt="Hone before transformation showing complex interface"

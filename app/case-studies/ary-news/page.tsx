@@ -64,9 +64,9 @@ export default function ARYNewsCase() {
           </ul>
         </div>
 
-        {/* Hero Image - Full Width */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+        {/* Hero Image - Contained */}
+        <div className="mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
             <img src="/ary-news-thumbnail.png" alt="ARY News digital platform interface" className="w-full" />
           </div>
         </div>
@@ -101,11 +101,22 @@ export default function ARYNewsCase() {
         </div>
 
         {/* Broadcast Interface Showcase Image */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+        <div className="mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
             <img
               src="/ary-broadcast-interview.png"
               alt="ARY News broadcast interface showing Powerplay with Arshad Sharif"
+              className="w-full"
+            />
+          </div>
+        </div>
+
+        {/* Broadcast Interview Interface Image */}
+        <div className="mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+            <img
+              src="/ary-broadcast-interview-interface.png"
+              alt="ARY News broadcast interview interface design"
               className="w-full"
             />
           </div>
@@ -147,8 +158,8 @@ export default function ARYNewsCase() {
         </div>
 
         {/* Press Badges Image */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+        <div className="mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
             <img
               src="/ary-press-badges.png"
               alt="ARY News press badges and staff identification materials"
@@ -177,8 +188,8 @@ export default function ARYNewsCase() {
         </div>
 
         {/* Promotional Package Image */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+        <div className="mb-12">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
             <img
               src="/ary-new-look-package.png"
               alt="ARY News rebrand promotional package - The New Look of ARY"

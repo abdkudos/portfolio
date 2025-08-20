@@ -62,9 +62,9 @@ export default function GrabEatCaseStudy() {
           </ul>
         </div>
 
-        {/* Hero Images - Full Width */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-16">
-          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+        {/* Hero Images - Contained */}
+        <div className="mb-16">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
             <img
               src="/grab-eat-app-screens.png"
               alt="Grab Eat mobile app interface showcase"
@@ -128,12 +128,6 @@ export default function GrabEatCaseStudy() {
             I conducted interviews with urban buyers, street vendors, and quality-focused shoppers:
           </p>
 
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-8">
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
-              <img src="/grab-eat-user-personas.png" alt="Grab Eat user personas research" className="w-full h-auto" />
-            </div>
-          </div>
-
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <span className="w-2 h-2 bg-black dark:bg-white rounded-full mt-2 flex-shrink-0"></span>
@@ -161,11 +155,32 @@ export default function GrabEatCaseStudy() {
             </div>
           </div>
 
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-8 mb-8">
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+          <div className="mt-8 space-y-6">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
               <img
-                src="/grab-eat-desk-research.png"
-                alt="Grab Eat desk research and wireframes"
+                src="/grab-eat-research.png"
+                alt="Grab Eat research findings"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-user interviews.png"
+                alt="Grab Eat user interviews"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-desk research.png"
+                alt="Grab Eat desk research"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-desk research 2.png"
+                alt="Grab Eat additional desk research"
                 className="w-full h-auto"
               />
             </div>
@@ -175,16 +190,6 @@ export default function GrabEatCaseStudy() {
         {/* Design Solutions */}
         <div className="mb-16">
           <h2 className="text-xl font-sans font-semibold mb-6">Design Solutions</h2>
-
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-8">
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
-              <img
-                src="/grab-eat-app-structure.png"
-                alt="Grab Eat application structure and user flows"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
 
           <div className="space-y-8">
             <div>
@@ -212,8 +217,56 @@ export default function GrabEatCaseStudy() {
             </div>
           </div>
 
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-8">
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mx-6">
+          <div className="mt-8 space-y-6">
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-personas.png"
+                alt="Grab Eat user personas"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-user journey.png"
+                alt="Grab Eat user journey mapping"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-challenges.png"
+                alt="Grab Eat design challenges"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-ideas.png"
+                alt="Grab Eat design ideas and concepts"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-lowfidelity1.png"
+                alt="Grab Eat low fidelity wireframes 1"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+              <img
+                src="/grab-eat-lowfidelity2.png"
+                alt="Grab Eat low fidelity wireframes 2"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
               <img
                 src="/grab-eat-mobile-interface.png"
                 alt="Grab Eat mobile app interface design"
