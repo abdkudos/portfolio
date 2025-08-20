@@ -21,7 +21,7 @@ export default function Portfolio() {
             <div className="flex items-center gap-2">
                           <Link
               href="/about"
-              className="px-3 py-2 text-sm font-sans hover:bg-gray-100 dark:hover:bg-gray-800 focus:bg-gray-100 dark:focus:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600 rounded-lg transition-colors"
+              className="px-3 py-2 text-sm font-sans hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none rounded-lg transition-colors"
             >
                 About
               </Link>
@@ -329,16 +329,22 @@ export default function Portfolio() {
           <div className="mb-12">
             <div className="mb-4">
               <h3 className="text-lg font-sans font-semibold mb-2">Call of Duty: Warzone Mobile</h3>
-                              <p className="text-sm font-sans text-gray-600 dark:text-gray-400 mb-6">
-                  Translating one of the world's most renowned AAA shooters into an immersive mobile experience
-                </p>
+              <p className="text-sm font-sans text-gray-600 dark:text-gray-400 mb-6">
+                Translating one of the world's most renowned AAA shooters into an immersive mobile experience
+              </p>
             </div>
-                          <div className="h-48 sm:h-56 md:h-64">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-full">
-                <img
-                  src="/cod-warzone-new-thumbnail.png"
-                  alt="Call of Duty Warzone Mobile interface"
-                  className="w-full h-full object-cover"
+            <div className="h-48 sm:h-56 md:h-64">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-full">
+                <ImageSlideshow
+                  images={[
+                    "/cod-warzone-new-thumbnail.png",
+                    "/cod-warzone.png",
+                    "/cod-warzone-1.png",
+                    "/cod-warzone-2.png",
+                    "/cod-warzone-mobile-branding.png",
+                  ]}
+                  alt="Call of Duty Warzone Mobile interface design"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -373,23 +379,24 @@ export default function Portfolio() {
         <div className="border-t border-gray-200 dark:border-gray-700 my-16"></div>
 
         {/* Footer */}
-        <div className="flex justify-between items-center text-sm font-sans">
-          <div className="text-gray-600 dark:text-gray-400">© 2025</div>
-          <div className="flex gap-8">
-            <a href="mailto:qudoos253@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              Contact
-            </a>
+        <div className="space-y-4 text-sm font-sans">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+            <div className="text-gray-600 dark:text-gray-400">© 2025</div>
+            <div className="flex flex-wrap gap-4 sm:gap-6">
+              <a href="mailto:qudoos253@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Contact
+              </a>
 
-            <a href="https://behance.net/abdkudos" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0.5 94.187 511 323.626">
-                <path d="M206.729 238.87s48.358-3.59 48.358-60.297c0-56.711-39.563-84.387-89.678-84.387H.5v316.909h164.909s100.671 3.18 100.671-93.537c0 .001 4.389-78.688-59.351-78.688zm-53.19-88.357h11.87s22.416 0 22.416 32.973c0 32.969-13.183 37.749-28.136 37.749H73.161v-70.722h80.378zm7.21 204.257H73.161v-84.69h92.248s33.41-.438 33.41 43.522c0 37.068-24.954 40.888-38.07 41.168zm239.593-179.953c-121.873 0-121.765 121.766-121.765 121.766s-8.362 121.141 121.765 121.141c0 0 108.438 6.195 108.438-84.271h-55.768s1.86 34.068-50.81 34.068c0 0-55.777 3.738-55.777-55.135H510.64c0-.001 17.968-137.569-110.298-137.569zm-54.53 95.263s6.81-48.846 55.769-48.846c48.949 0 48.336 48.846 48.336 48.846H345.812zm117.096-118.199H332.159v-39.025h130.749v39.025z"/>
-              </svg>
-              Behance
-            </a>
-                          <a
+              <a href="https://behance.net/abdkudos" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0.5 94.187 511 323.626">
+                  <path d="M206.729 238.87s48.358-3.59 48.358-60.297c0-56.711-39.563-84.387-89.678-84.387H.5v316.909h164.909s100.671 3.18 100.671-93.537c0 .001 4.389-78.688-59.351-78.688zm-53.19-88.357h11.87s22.416 0 22.416 32.973c0 32.969-13.183 37.749-28.136 37.749H73.161v-70.722h80.378zm7.21 204.257H73.161v-84.69h92.248s33.41-.438 33.41 43.522c0 37.068-24.954 40.888-38.07 41.168zm239.593-179.953c-121.873 0-121.765 121.766-121.765 121.766s-8.362 121.141 121.765 121.141c0 0 108.438 6.195 108.438-84.271h-55.768s1.86 34.068-50.81 34.068c0 0-55.777 3.738-55.777-55.135H510.64c0-.001 17.968-137.569-110.298-137.569zm-54.53 95.263s6.81-48.846 55.769-48.846c48.949 0 48.336 48.846 48.336 48.846H345.812zm117.096-118.199H332.159v-39.025h130.749v39.025z"/>
+                </svg>
+                Behance
+              </a>
+              <a
                 href="https://github.com/abdkudos"
                 className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2"
               >
@@ -398,7 +405,7 @@ export default function Portfolio() {
               </svg>
               GitHub
             </a>
-                          <a
+              <a
                 href="https://www.linkedin.com/in/abdkudos/"
                 className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2"
               >
@@ -407,6 +414,7 @@ export default function Portfolio() {
               </svg>
               LinkedIn
             </a>
+            </div>
           </div>
         </div>
       </div>
