@@ -341,7 +341,6 @@ export default function Portfolio() {
                     "/cod-warzone.png",
                     "/cod-warzone-1.png",
                     "/cod-warzone-2.png",
-                    "/cod-warzone-mobile-branding.png",
                   ]}
                   alt="Call of Duty Warzone Mobile interface design"
                   className="w-full h-full"
