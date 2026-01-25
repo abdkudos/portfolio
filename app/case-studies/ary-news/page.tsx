@@ -204,7 +204,7 @@ export default function ARYNewsCase() {
         {/* Footer */}
         <div className="space-y-4 text-sm font-sans">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-            <div className="text-gray-600 dark:text-gray-400">© 2025</div>
+            <div className="text-gray-600 dark:text-gray-400">© 2026</div>
             <div className="flex flex-wrap gap-4 sm:gap-6">
               <a href="mailto:qudoos253@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
