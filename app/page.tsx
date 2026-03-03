@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { ImageSlideshow } from "@/components/image-slideshow"
+import { CubicleSection } from "@/components/3d-cubicle"
 
 export default function Portfolio() {
   return (
@@ -372,6 +373,11 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* 3D Cubicle Section */}
+        <div className="mb-16">
+          <CubicleSection />
         </div>
 
         {/* Dividing Line */}
