@@ -1,7 +1,11 @@
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { ImageSlideshow } from "@/components/image-slideshow"
-import { CubicleSection } from "@/components/3d-cubicle"
+
+const CubicleSection = dynamic(() => import("@/components/3d-cubicle").then(mod => ({ default: mod.CubicleSection })), {
+  ssr: false,
+})
 
 export default function Portfolio() {
   return (

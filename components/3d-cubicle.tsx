@@ -210,8 +210,13 @@ function CubicleBox({ scrollProgress, isDark }: CubicleBoxProps) {
 export function CubicleSection() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isDark, setIsDark] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     setIsDark(theme === 'dark');
@@ -237,6 +242,22 @@ export function CubicleSection() {
   }, []);
 
   const bgColor = isDark ? '#0f172a' : '#f8fafc';
+
+  if (!isMounted) {
+    return (
+      <section className="w-full py-20 overflow-hidden" style={{ backgroundColor: bgColor }}>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Featured Skills</h2>
+            <p className="text-lg opacity-75">
+              Scroll to explore my expertise across different areas
+            </p>
+          </div>
+          <div className="w-full h-96 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800" />
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
