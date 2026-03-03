@@ -1,15 +1,12 @@
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
-import dynamic from "next/dynamic"
 import { ImageSlideshow } from "@/components/image-slideshow"
-
-const CubicleSection = dynamic(() => import("@/components/3d-cubicle").then(mod => ({ default: mod.CubicleSection })), {
-  ssr: false,
-})
+import { CubeWrapper } from "@/components/3d-cubicle"
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+    <CubeWrapper>
+      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <div className="max-w-2xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-16">
@@ -428,5 +425,6 @@ export default function Portfolio() {
         </div>
       </div>
     </div>
+    </CubeWrapper>
   )
 }
