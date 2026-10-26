@@ -32,6 +32,23 @@ export default function Portfolio() {
         {/* Experience Section */}
         <div className="mb-16">
           <div className="grid gap-4 text-sm font-sans">
+              <a
+                href="https://www.gettimey.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="text-black dark:text-white">Timey</div>
+                    <ArrowUpRight aria-hidden="true" className="w-3.5 h-3.5 text-gray-600 dark:text-gray-400" />
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-400">Founder and Designer</div>
+                </div>
+                <div className="text-gray-600 dark:text-gray-400">Present</div>
+                <div className="absolute bottom-0 left-0 h-px bg-black dark:bg-white w-0 group-hover:w-full group-focus-visible:w-full transition-all duration-300 ease-out"></div>
+              </a>
+
             <div className="group relative flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700 select-none cursor-default">
               <div>
                 <div className="flex items-center gap-2 mb-1">
@@ -122,6 +139,40 @@ export default function Portfolio() {
           </div>
         </div>
 
+        {/* Ventures Section */}
+        <div className="mb-16">
+          <h2 className="text-sm font-sans mb-6 font-semibold">Ventures</h2>
+          <div className="grid gap-4 text-sm font-sans">
+            {[
+              {
+                name: "Timey",
+                href: "https://www.gettimey.com",
+                description: "Timey is a native alarm app for friends, family and micro-communities.",
+              },
+              {
+                name: "Ivy Media",
+                href: "https://ivymedia.co",
+                description: "Marketing and patient journeys for medspa and wellness clinics.",
+              },
+            ].map((venture) => (
+              <a
+                key={venture.name}
+                href={venture.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block py-2 border-b border-gray-200 dark:border-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="text-black dark:text-white">{venture.name}</div>
+                  <ArrowUpRight aria-hidden="true" className="w-3.5 h-3.5 text-gray-600 dark:text-gray-400" />
+                </div>
+                <div className="text-gray-600 dark:text-gray-400">{venture.description}</div>
+                <div className="absolute bottom-0 left-0 h-px bg-black dark:bg-white w-0 group-hover:w-full group-focus-visible:w-full transition-all duration-300 ease-out"></div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Certifications Section */}
         <div className="mb-16">
           <h2 className="text-sm font-sans mb-6 font-semibold">Recognitions</h2>
@@ -150,6 +201,41 @@ export default function Portfolio() {
         {/* Featured Work */}
         <div className="mb-16">
           <h2 className="text-sm font-sans mb-6 font-semibold">Featured</h2>
+
+          {/* Timey Project */}
+          <div className="mb-12">
+            <Link href="/case-studies/timey" className="block group">
+              <div className="mb-4">
+                <h3 className="text-lg font-sans font-semibold mb-2 flex items-center gap-2">
+                  Timey - Alarms That Bring People Together
+                  <ArrowUpRight aria-hidden="true" className="w-5 h-5 text-black dark:text-white transform rotate-0 group-hover:rotate-45 transition-transform duration-300" />
+                </h3>
+                <p className="text-sm font-sans text-gray-600 dark:text-gray-400 mb-6">
+                  Bootstrapped, designed, and launched a native alarm app on iOS devices.
+                </p>
+              </div>
+              <div className="grid grid-cols-10 gap-2 sm:gap-4 h-48 sm:h-56 md:h-64 transition-all duration-300 group-hover:scale-[1.01] group-hover:shadow-lg">
+                <div className="col-span-3 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-full">
+                  <img
+                    src="/timey-artwork.png"
+                    alt="Timey artwork with a cosmic background"
+                    className="w-full h-full object-cover group-hover:blur-[1px] transition-all duration-300"
+                  />
+                </div>
+                <div className="col-span-7 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-full relative">
+                  <img
+                    src="/timey-mockup.jpeg"
+                    alt="Timey alarm sharing interface on an iPhone"
+                    className="w-full h-full object-cover group-hover:blur-[1px] transition-all duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <ArrowUpRight aria-hidden="true" className="w-6 h-6 sm:w-8 sm:h-8 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
 
           {/* Hone Project */}
           <div className="mb-12">
@@ -389,11 +475,11 @@ export default function Portfolio() {
                 Contact
               </a>
 
-              <a href="https://behance.net/abdkudos" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0.5 94.187 511 323.626">
-                  <path d="M206.729 238.87s48.358-3.59 48.358-60.297c0-56.711-39.563-84.387-89.678-84.387H.5v316.909h164.909s100.671 3.18 100.671-93.537c0 .001 4.389-78.688-59.351-78.688zm-53.19-88.357h11.87s22.416 0 22.416 32.973c0 32.969-13.183 37.749-28.136 37.749H73.161v-70.722h80.378zm7.21 204.257H73.161v-84.69h92.248s33.41-.438 33.41 43.522c0 37.068-24.954 40.888-38.07 41.168zm239.593-179.953c-121.873 0-121.765 121.766-121.765 121.766s-8.362 121.141 121.765 121.141c0 0 108.438 6.195 108.438-84.271h-55.768s1.86 34.068-50.81 34.068c0 0-55.777 3.738-55.777-55.135H510.64c0-.001 17.968-137.569-110.298-137.569zm-54.53 95.263s6.81-48.846 55.769-48.846c48.949 0 48.336 48.846 48.336 48.846H345.812zm117.096-118.199H332.159v-39.025h130.749v39.025z"/>
+              <a href="https://x.com/abdulkudooss" aria-label="X" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2">
+                <svg aria-hidden="true" className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933Zm-1.29 19.49h2.039L6.486 3.24H4.298L17.61 20.643Z" />
                 </svg>
-                Behance
+                X
               </a>
               <a
                 href="https://github.com/abdkudos"
